@@ -1,0 +1,27 @@
+{
+  "name": "template-next-bootstrap",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf build"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "next": "15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sass": "^1.89.0",
+    "tabler-icons-react": "^1.56.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "sass": "^1.89.0",
+    "typescript": "^5.8.3"
+  }
+}

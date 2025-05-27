@@ -1,0 +1,18 @@
+{
+    "workbench.colorCustomizations": {
+        "folderPathColor.custom1": "#DD5E56",
+        "folderPathColor.custom2": "#53B9D1",
+        "folderPathColor.custom3": "#F7CC4F",
+        "folderPathColor.custom4": "#7859BC",
+        "folderPathColor.custom5": "#C2CA51",
+        "folderPathColor.custom6": "#7859BC",
+    },
+    "folder-path-color.folders": [
+        { "path": "src/app", "color": "custom1" },
+        { "path": "src/components", "color": "custom2" },
+        { "path": "src/data", "color": "custom3" },
+        { "path": "src/hooks", "color": "custom4" },
+        { "path": "src/lib", "color": "custom5" },
+        { "path": "src/styles", "color": "custom6" }
+    ],
+}

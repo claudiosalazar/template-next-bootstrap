@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as *;
+
+.needs-validation {
+  
+  // Mensajes de feedback
+  .invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+  }
+
+  .valid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #198754;
+  }
+
+  // Mostrar feedback cuando el campo tiene la clase correspondiente
+  .form-control.is-invalid + .invalid-feedback,
+  .form-control.is-invalid ~ .invalid-feedback {
+    display: block;
+  }
+
+  .form-control.is-valid + .valid-feedback,
+  .form-control.is-valid ~ .valid-feedback {
+    display: block;
+  }
+
+  // Estilos para campos requeridos
+  .form-label span.text-danger {
+    font-weight: 600;
+  }
+}
+
+// Mejoras visuales para el formulario
+.form-control, .form-select {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+  &:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}

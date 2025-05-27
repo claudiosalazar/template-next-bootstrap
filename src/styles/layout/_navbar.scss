@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as *;
+
+.navbar {
+
+  .nav-link {
+    position: relative;
+    color: $gris !important;
+    
+    &:hover {
+      color: $negro !important;
+    }
+    
+    &.active {
+      font-weight: 600;
+      color: $negro !important;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+      }
+    }
+  }
+
+  // Asegurar que el navbar-text también funcione
+  .navbar-text .nav-link {
+    &.active {
+      font-weight: 600;
+      color: $negro !important;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+      }
+    }
+  }
+}

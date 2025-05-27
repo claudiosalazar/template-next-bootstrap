@@ -1,0 +1,38 @@
+/* 
+  Autor: Claudio Salazar
+  Email: contacto@claudiosalazar.cl
+  Fecha de creación: 26-05-2025
+  Última actualización: 27-05-2025
+  Descripción: Template Next.js with Bootstrap
+  Repositorio: https://github.com/claudiosalazar/template-next-bootstrap
+*/
+
+// Bootstrap
+@use "~bootstrap/dist/css/bootstrap" as *;
+
+// Index de todos los archivos SCSS
+@use "./abstracts/index" as *;
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: black;
+  background: white;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, var(--font-inter), sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  min-height: 100svh;
+  grid-template-rows: auto 1fr auto;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
