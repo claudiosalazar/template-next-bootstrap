@@ -1,4 +1,9 @@
 import ContactForm from "@/components/ui/ContactForm";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Titulo del Proyecto | Contacto",
+};
 
 export default function Contact() {
   return (

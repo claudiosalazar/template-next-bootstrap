@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <div className="container-fluid g-0">
       <footer className="d-flex flex-wrap justify-content-between align-items-center py-4 px-4 border-top">
-        <div className="col-md-4 d-flex align-items-center">
+        <div className="col-md-6 d-flex align-items-center">
           <span className="mb-3 mb-md-0 text-body-secondary">
-            2025 © Template Next & Bootstrap.
+            © 2025 - Template Next & Bootstrap. Este proyecto está licenciado bajo la <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">Licencia MIT</a>.
           </span>
         </div>
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">

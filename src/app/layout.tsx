@@ -19,7 +19,10 @@ const inter = Inter({
 const fontClasses = `${inter.variable}`;
 
 export const metadata: Metadata = {
-  title: "Titulo del Proyecto",
+  title: {
+    template: "%s",
+    default: "Titulo del Proyecto"
+  },
   description: 
   "Descripción de proyecto.",
   keywords: [
