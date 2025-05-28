@@ -1,3 +1,5 @@
+![firma](https://claudiosalazar.cl/images/firma-github.webp)
+---
 # Template Next.js Bootstrap
 
 Un template básico y responsivo desarrollado con Next.js 15.3.2 y Bootstrap 5.3.6.
@@ -127,9 +129,3 @@ El template está optimizado para:
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
-
----
-
-**Desarrollado usando Next.js y Bootstrap**
-
-![firma](https://claudiosalazar.cl/images/firma-github.webp)
