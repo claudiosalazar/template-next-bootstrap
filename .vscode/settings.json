@@ -6,6 +6,12 @@
         "folderPathColor.custom4": "#7859BC",
         "folderPathColor.custom5": "#C2CA51",
         "folderPathColor.custom6": "#7859BC",
+        
+        // Colores para archivos con errores
+        "errorForeground": "#FF0000",
+        "editorError.foreground": "#FF0000",
+        "problemsErrorIcon.foreground": "#FF0000",
+        "list.errorForeground": "#FF0000"
     },
     "folder-path-color.folders": [
         { "path": "src/app", "color": "custom1" },
