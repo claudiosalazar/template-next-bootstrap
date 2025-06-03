@@ -1,13 +1,12 @@
 // Abstracts
-@use "./variables" as *;
-@use "./mixins" as *;
+@use './variables' as *;
 
 // Components
-@use "../components/form" as *;
+@use '../components/form' as *;
 
 // Layouts
-@use "../layout/carousel" as *;
-@use "../layout/navbar" as *;
+@use '../layout/carousel' as *;
+@use '../layout/navbar' as *;
 
 // Pages
-@use "../pages/quienes-somos" as *;
+@use '../pages/quienes-somos' as *;

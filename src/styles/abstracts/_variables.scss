@@ -1,10 +1,13 @@
-$blanco: #fff;
+// Colores del tema (utilizados)
 $negro: #000;
 $gris: #919191;
 
-// Media breakpoints
+// Media breakpoints (solo el utilizado)
 $sm: 576px;
 $md: 767px;
 $lg: 992px;
 $xl: 1200px;
-$xxl: 1400px;
+$xxl: 1400px
+
+// Nota: Variables no utilizadas eliminadas para mantener el código limpio
+// Se mantienen solo las variables que están siendo referenciadas en el proyecto

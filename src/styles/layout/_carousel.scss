@@ -1,11 +1,11 @@
-@use "../abstracts/variables" as *;
+@use '../abstracts/variables' as *;
 
 .carousel {
   .carousel-inner {
     aspect-ratio: 4 / 3 !important;
     position: relative;
 
-    @media ($sm < width) {
+    @media ($md < width) {
       aspect-ratio: 16 / 6 !important;
     }
   }

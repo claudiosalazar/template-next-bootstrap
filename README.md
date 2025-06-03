@@ -1,96 +1,125 @@
-![firma](https://claudiosalazar.cl/images/firma-github.webp)
----
 # Template Next.js Bootstrap
 
-Un template básico y responsivo desarrollado con Next.js 15.3.2 y Bootstrap 5.3.6.
+Un template **minimalista y optimizado** desarrollado con Next.js 15.3.2 y Bootstrap 5.3.6, diseñado como base limpia para proyectos React.
+
+> ✨ **Versión optimizada:** Este template ha sido completamente limpiado y optimizado, eliminando todo el código no utilizado para mantener solo lo esencial.
 
 ## 🚀 Características
 
-- **Next.js 15.3.2**
-- **React 19.1.0**
-- **Bootstrap 5.3.6**
-- **TypeScript 5.8.3**
-- **SCSS**
-- **Tabler Icons**
-- **Formulario Reactivo**
-- **Navegación Activa**
-- **Carousel Automático**
-- **SEO Optimizado**
-- **PWA Ready**
-- **Responsive Design**
+- **Next.js 15.3.2** con App Router
+- **React 19.1.0** con TypeScript
+- **Bootstrap 5.3.6** para UI responsiva
+- **TypeScript 5.8.3** para tipado estático
+- **SCSS** minimalista con solo 3 variables necesarias
+- **Configuración simplificada** sin middleware complejo
+- **Código limpio** sin dependencias innecesarias
+- **Bundle optimizado** sin código no utilizado
+- **ESLint & Prettier** para calidad de código
+- **Tabler Icons** para iconografía
+- **Formularios reactivos** con validación básica
+- **Navegación activa** dinámica
+- **Carousel automático** optimizado
+- **SEO Optimizado** con metadatos completos
+- **PWA Ready** para aplicaciones web progresivas
+- **Responsive Design** mobile-first
 
 ## 📁 Estructura del Proyecto
 
 ```
 src/
-├── app/
-│   ├── layout.tsx            # Layout principal con metadata SEO
-│   ├── page.tsx              # Página de inicio
-│   ├── blog/
-│   │   └── page.tsx          # Blog
-│   ├── contacto/
-│   │   └── page.tsx          # Formulario de contacto
-│   ├── productos/
-│   │   └── page.tsx          # Catálogo de productos
-│   └── quienes-somos/
-│       └── page.tsx          # Página institucional
-├── components/
-│   ├── layout/
-│   │   ├── Navbar.tsx        # Barra de navegación responsiva
-│   │   ├── Footer.tsx        # Pie de página con enlaces sociales
-│   │   └── Carousel.tsx      # Carousel de imágenes
-│   └── ui/
-│       └── ContactForm.tsx   # Formulario de contacto con validaciones
-├── styles/
-│   ├── globals.scss          # Estilos globales e importaciones
-│   ├── abstracts/
-│   │   ├── _index.scss       # Índice de abstracts
-│   │   ├── _variables.scss   # Variables SCSS personalizadas
-│   │   └── _mixins.scss      # Mixins reutilizables
-│   ├── components/
-│   │   └── _form.scss        # Estilos del formulario
-│   ├── layout/
-│   │   ├── _carousel.scss    # Estilos del carousel
-│   │   └── _navbar.scss      # Estilos de navegación
-│   └── pages/
-│       └── _quienes-somos.scss # Estilos específicos de páginas
-└── public/
-    ├── images/               # Imágenes estáticas
+├── app/                      # App Router de Next.js
+│   ├── favicon.ico          # Icono del sitio
+│   ├── layout.tsx           # Layout principal con SEO
+│   ├── page.tsx             # Página de inicio
+│   ├── blog/page.tsx        # Blog
+│   ├── contacto/page.tsx    # Formulario de contacto
+│   ├── productos/page.tsx   # Catálogo de productos
+│   └── quienes-somos/page.tsx # Página institucional
+├── components/              # Componentes minimalistas
+│   ├── layout/              # Componentes de layout
+│   │   ├── Navbar.tsx       # Barra de navegación responsiva
+│   │   ├── Footer.tsx       # Pie de página con enlaces sociales
+│   │   └── Carousel.tsx     # Carousel de imágenes
+│   │   └── index.ts         # Re-export de Navbar y Footer
+│   └── ui/                  # Componentes UI esenciales
+│       ├── ContactForm.tsx  # Formulario con validaciones
+│       └── index.ts         # Re-export de ContactForm
+├── config/                  # Configuraciones centralizadas
+│   └── site.ts              # Configuración del sitio
+├── lib/                     # Utilidades básicas
+│   └── validations.ts       # Validaciones de email y teléfono
+├── types/                   # Tipos TypeScript esenciales
+│   └── index.ts             # Tipos globales del proyecto
+├── styles/                  # Estilos SCSS optimizados
+│   ├── globals.scss         # Estilos globales e importaciones
+│   ├── abstracts/           # Variables SCSS minimalistas
+│   │   ├── _index.scss      # Índice de abstracts
+│   │   └── _variables.scss  # Solo 3 variables esenciales
+│   ├── components/          # Estilos de componentes
+│   │   └── _form.scss       # Estilos del formulario
+│   ├── layout/              # Estilos de layout
+│   │   ├── _carousel.scss   # Estilos del carousel
+│   │   └── _navbar.scss     # Estilos de navegación
+│   └── pages/               # Estilos específicos de páginas
+│       └── _quienes-somos.scss
+└── public/                  # Archivos estáticos
     ├── robots.txt           # SEO para motores de búsqueda
     ├── sitemap.xml          # Mapa del sitio
-    └── site.webmanifest     # Configuración PWA
+    ├── site.webmanifest     # Configuración PWA
+    ├── images/              # Imágenes optimizadas
+    │   ├── opengraph.png    # Imagen Open Graph
+    │   ├── icons/           # Iconos PWA
+    │   └── examples/        # Imágenes de ejemplo
+    └── src/
+        └── opengraph.psd    # Archivo fuente Open Graph
 ```
 
 ## 📦 Scripts Disponibles
 
-- `npm run dev` - Ejecuta el servidor de desarrollo con Turbopack
+- `npm run dev` - Ejecuta el servidor de desarrollo
 - `npm run build` - Construye el proyecto para producción
 - `npm start` - Ejecuta el servidor de producción
-- `npm run lint` - Ejecuta el linter de Next.js
+- `npm run lint` - Ejecuta el linter de ESLint
+- `npm run lint:fix` - Ejecuta ESLint y corrige automáticamente
+- `npm run type-check` - Verifica tipos de TypeScript
+- `npm run format` - Formatea el código con Prettier
 - `npm run clean` - Limpia archivos de build
 
 ## 🎨 Personalización
 
-### Variables SCSS
+### Variables SCSS Minimalistas
 
-El proyecto utiliza variables SCSS personalizadas. Ejemplos de variables en:
+El proyecto utiliza solo las variables SCSS esenciales:
+
 ```scss
 // src/styles/abstracts/_variables.scss
-$blanco: #fff;
-$negro: #000;
-$gris: #919191;
-
-// Media breakpoints personalizados
-$sm: 576px;
-$md: 767px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
+$negro: #000;        // Color negro para texto navbar
+$gris: #919191;      // Color gris para elementos navbar
+$sm: 576px;          // Breakpoint para carousel responsivo
 ```
 
-## 🌐  Configuración SEO
+### Configuración Centralizada
+
+El archivo `src/config/site.ts` centraliza toda la configuración:
+
+```typescript
+export const siteConfig = {
+  name: 'Template Next.js Bootstrap',
+  description: 'Un template profesional...',
+  url: 'https://your-domain.com',
+  author: {
+    name: 'Tu Nombre',
+    url: 'https://your-website.com',
+    twitter: '@tuusername',
+  },
+  keywords: ['Next.js', 'React', 'Bootstrap', 'TypeScript'],
+};
+```
+
+## 🌐 Configuración SEO
 
 El SEO está configurado en `src/app/layout.tsx`:
+
 - Meta tags completos
 - Open Graph para redes sociales
 - Twitter Cards
@@ -100,8 +129,9 @@ El SEO está configurado en `src/app/layout.tsx`:
 ## 📱 Responsive Design
 
 El template está optimizado para:
+
 - **Mobile First**: < 576px
-- **Small**: 576px - 767px  
+- **Small**: 576px - 767px
 - **Medium**: 768px - 991px
 - **Large**: 992px - 1199px
 - **Extra Large**: 1200px - 1399px
@@ -110,11 +140,13 @@ El template está optimizado para:
 ## 🔧 VSCode Integration
 
 ### Configuración Automatizada
+
 - Inicio automático del servidor de desarrollo al abrir el proyecto
 - Colores personalizados para carpetas usando Material Icon Theme
 - Configuración en `.vscode/settings.json` y `.vscode/tasks.json`
 
 ## 🏙️ Images
+
 - Las imágenes usadas fueron obtenidas desde [Pixabay](https://pixabay.com)
 - El formato de imagen para el archivo opengraph esta en la carpeta **'/public/src/opengraph.psd'**.
 
@@ -129,3 +161,7 @@ El template está optimizado para:
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
+
+**Creado por** 
+
+![firma](https://claudiosalazar.cl/images/firma-github.webp) 

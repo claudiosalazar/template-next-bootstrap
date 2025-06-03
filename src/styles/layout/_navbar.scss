@@ -1,19 +1,18 @@
-@use "../abstracts/variables" as *;
+@use '../abstracts/variables' as *;
 
 .navbar {
-
   .nav-link {
     position: relative;
     color: $gris !important;
-    
+
     &:hover {
       color: $negro !important;
     }
-    
+
     &.active {
       font-weight: 600;
       color: $negro !important;
-      
+
       &::after {
         content: '';
         position: absolute;
@@ -30,7 +29,7 @@
     &.active {
       font-weight: 600;
       color: $negro !important;
-      
+
       &::after {
         content: '';
         position: absolute;
